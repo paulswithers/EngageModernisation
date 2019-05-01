@@ -1,48 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<note xmlns="http://www.lotus.com/dxl" class="view">
-  <item name="$FormulaClass" sign="true">
-    <text>1</text>
-  </item>
-  <item name="$TITLE" sign="true">
-    <text>AllThreadsByAuthor</text>
-  </item>
-  <item name="$Index" sign="true">
-    <text/>
-  </item>
-  <item name="$Formula" summary="true" sign="true">
-    <formula compiled="true">
-ZgAFADIALgAFAAYABQAIAAkABABBdXRob3JUaXRsZUFic3RyYWN0JENvbmZsaWN0JFJFRgQABAAA
-ACIABQAEAEZvcm0BAAoARGlzY3Vzc2lvbgoCBAAEAAMABwAMAAUACTNTNFMA
-</formula>
-  </item>
-  <item name="$Collation" summary="true">
-    <rawitemdata type="2">
-EwABAABEiGYHAAAGAEF1dGhvcg==
-</rawitemdata>
-  </item>
-  <item name="$ViewFormat" summary="true" sign="true">
-    <rawitemdata type="5">
-AQADAAQACAAAAFZDAwAGAAYAAAAAAJYAAQAACgABAAAAAAAAAAICAAAAVkMAAAUABQAAAAAAXQEB
-AAAKAAAAAAAAAAAAAgIAAABWQwAACAAIAAAAAADwAAEAAAoAAAAAAAAAAAACAgAAAEF1dGhvckF1
-dGhvclRpdGxlVGl0bGVBYnN0cmFjdEFic3RyYWN0JgABAAAAAQEACQEAAAoBAQ4KAAABAK0rAQAB
-AAEAAAAAAAAAAABXQwEBAAkAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAD//wAAAAAAAAAAAAAAAAAA
-V0MBAQAJAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA//8AAAAAAAAAAAAAAAAAAFdDAQEACQAAAAAA
-AAAAAAAAAAAAAAAAAAQAAAAAAP//AAAAAAAAAAAAAAAAAABCAAAAAAABAP///wAFAP///wABAAAA
-AAAAAAAAAAAAAAEA////AAEA////AAAAAQAAAAAAAQAAAAAAAQAAAAAAAAAIAAAAAAABAA==
-</rawitemdata>
-  </item>
-  <item name="$Comment" sign="true">
-    <text/>
-  </item>
-  <item name="$WebFlags">
-    <text>A</text>
-  </item>
+<view xmlns="http://www.lotus.com/dxl" name="AllThreadsByAuthor" showinmenu="false" publicaccess="false" unreadmarks="none" onopengoto="lastopened" onrefresh="displayindicator" headers="beveled" opencollapsed="false" showresponsehierarchy="true" showmargin="true" shrinkrows="false" extendlastcolumn="false" showhierarchies="false" unreadcolor="black" rowlinecount="1" headerlinecount="1" rowspacing="1" bgcolor="white" totalscolor="black" headerbgcolor="white" boldunreadrows="false" evaluateactions="false" allownewdocuments="false" allowcustomizations="true" hidemarginborder="false" marginwidth="0px" marginbgcolor="white" uniquekeys="false">
+  <code event="selection">
+    <formula>SELECT ((Form = "Discussion"))</formula>
+  </code>
+  <column sort="ascending" hidedetailrows="false" itemname="Author" width="18.7500" resizable="true" separatemultiplevalues="true" sortnoaccent="false" sortnocase="true" showaslinks="false" categorized="true">
+    <columnheader title="Author">
+      <font size="9pt" style="bold"/>
+    </columnheader>
+  </column>
+  <column hidedetailrows="false" itemname="Title" width="43.6250" resizable="true" separatemultiplevalues="false" sortnoaccent="false" sortnocase="true" showaslinks="false">
+    <columnheader title="Title">
+      <font size="9pt" style="bold"/>
+    </columnheader>
+  </column>
+  <column hidedetailrows="false" itemname="Abstract" width="30" resizable="true" separatemultiplevalues="false" sortnoaccent="false" sortnocase="true" showaslinks="false">
+    <columnheader title="Abstract">
+      <font size="9pt" style="bold"/>
+    </columnheader>
+  </column>
   <item name="$SelQuery" sign="true">
     <rawitemdata type="f">
 gQYAAAAAif8WAAAAAAABAAoARGlzY3Vzc2lvbg==
 </rawitemdata>
   </item>
-  <item name="$Flags">
-    <text>Y</text>
-  </item>
-</note>
+</view>

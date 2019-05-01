@@ -1,89 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<note xmlns="http://www.lotus.com/dxl" class="form">
-  <item name="$Class">
-    <text>xpFrameWork.ntf</text>
-  </item>
-  <item name="$HTMLCode" sign="true">
-    <rawitemdata type="1">
-X/8QAAIADwAHAAAAAAAAAA==
-</rawitemdata>
-  </item>
-  <item name="$TITLE">
-    <text>Contact</text>
-  </item>
-  <item name="$Info" sign="true">
-    <rawitemdata type="1">
-hhgBAIAAAAAAgAAAAQABAP///wAQAAAA
-</rawitemdata>
-  </item>
-  <item name="$Flags">
-    <text/>
-  </item>
-  <item name="FirstName" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="LastName" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="EMail" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="City" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="numfield" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="State" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="ConfigReaders" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="Readers" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="$Fields">
-    <textlist>
-      <text>Readers</text>
-      <text>ConfigReaders</text>
-      <text>State</text>
-      <text>numfield</text>
-      <text>City</text>
-      <text>EMail</text>
-      <text>LastName</text>
-      <text>FirstName</text>
-    </textlist>
-  </item>
-  <item name="$Body" sign="true">
-    <rawitemdata type="1">
-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
-</rawitemdata>
-  </item>
-</note>
+<form xmlns="http://www.lotus.com/dxl" name="Contact" publicaccess="false" fromtemplate="xpFrameWork.ntf" renderpassthrough="true">
+  <body>
+    <richtext>
+      <pardef id="1"/>
+      <par def="1">First Name:<field type="text" kind="editable" name="FirstName"/>
+        <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="7" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+      </par>
+      <par def="1">Last Name: <field type="text" kind="editable" name="LastName"/>
+        <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="6" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+      </par>
+      <par def="1">E-mail: <field type="text" kind="editable" name="EMail"/>
+        <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="6" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+      </par>
+      <par def="1">City: <field type="text" kind="editable" name="City"/>
+        <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="6" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+      </par>
+      <par def="1">State: <field type="text" kind="editable" name="State"/>
+        <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="6" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+      </par>
+      <par def="1">
+        <field type="text" kind="computed" name="numfield">
+          <code event="defaultvalue">
+            <formula>"1.05"</formula>
+          </code>
+        </field>
+        <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="6" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+      </par>
+      <par def="1">
+        <field type="readers" kind="editable" name="ConfigReaders">
+          <code event="defaultvalue">
+            <formula>"[Configuration]"</formula>
+          </code>
+        </field>
+      </par>
+      <par def="1">
+        <field type="readers" kind="editable" name="Readers"/>
+      </par>
+    </richtext>
+  </body>
+</form>

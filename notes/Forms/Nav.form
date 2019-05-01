@@ -1,174 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<note xmlns="http://www.lotus.com/dxl" class="form">
-  <item name="$Comment" sign="true">
-    <text/>
-  </item>
-  <item name="Untitled" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="$HTMLCode" sign="true">
-    <rawitemdata type="1">
-X/8QAAIADwAHAAAAAAAAAA==
-</rawitemdata>
-  </item>
-  <item name="$TITLE">
-    <text>Nav</text>
-  </item>
-  <item name="$Info" sign="true">
-    <rawitemdata type="1">
-hhgBAIAAAAAAgAAAAQABAP///wAQAAAA
-</rawitemdata>
-  </item>
-  <item name="$Flags">
-    <text/>
-  </item>
-  <item name="$Fonts">
-    <rawitemdata type="1">
-i/8oAAEABSZWZXJkYW5hAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
-</rawitemdata>
-  </item>
-  <item name="$Script" summary="false" sign="true">
-    <text>'++LotusScript Development Environment:2:5:(Options):0:74
-Option Public
+<form xmlns="http://www.lotus.com/dxl" name="Nav" publicaccess="false" renderpassthrough="true">
+  <globals>
+    <code event="options">
+      <lotusscript>Option Public
 Option Declare
 Use "mobileScript"
-'++LotusScript Development Environment:2:5:(Forward):0:1
-
-'++LotusScript Development Environment:2:5:(Declarations):0:2
-
-<break/>
-    </text>
-  </item>
-  <item name="$$viewSelect" summary="false" sign="true">
-    <text>'++LotusScript Development Environment:2:5:(Options):0:66
-
-'++LotusScript Development Environment:2:5:(Forward):0:1
-Declare Sub Exiting(Source As Field)
-Declare Sub Entering(Source As Field)
-
-'++LotusScript Development Environment:2:5:(Declarations):0:2
-
-'++LotusScript Development Environment:2:2:BindEvents:1:129
-Private Sub BindEvents(Byval Objectname_ As String)
-	Static Source As FIELD
-	Set Source = Bind(Objectname_)
-	On Event Exiting From Source Call Exiting
-	On Event Entering From Source Call Entering
-End Sub
-
-'++LotusScript Development Environment:2:2:Exiting:1:12
-Sub Exiting(Source As Field)
+</lotusscript>
+    </code>
+  </globals>
+  <actionbar bgcolor="#f0f0f0" bordercolor="black">
+    <actionbuttonstyle bgcolor="#f0f0f0"/>
+    <font color="system"/>
+    <border style="solid" width="0px 0px 1px"/>
+    <action title="Categori_ze" showinbar="false" systemcommand="categorize"/>
+    <action title="_Edit Document" showinbar="false" systemcommand="edit"/>
+    <action title="_Send Document" showinbar="false" systemcommand="send"/>
+    <action title="_Forward" showinbar="false" systemcommand="forward"/>
+    <action title="_Move To Folder..." showinbar="false" systemcommand="movetofolder"/>
+    <action title="_Remove From Folder" showinbar="false" systemcommand="removefromfolder"/>
+    <action title="_Read" showinbar="false" systemcommand="markread"/>
+    <action title="_Unread" showinbar="false" systemcommand="markunread"/>
+    <action title="_Open in New Window" showinbar="false" systemcommand="openinnewwindow"/>
+    <action title="_Print..." showinbar="false" systemcommand="print"/>
+    <action title="_Delete" showinbar="false" systemcommand="delete"/>
+    <action title="_Document Properties" showinbar="false" systemcommand="properties"/>
+    <action title="C_ut" showinbar="false" systemcommand="cut"/>
+    <action title="_Copy" showinbar="false" systemcommand="copy"/>
+    <action title="Copy as Document _Link" showinbar="false" systemcommand="copyasdoclink"/>
+    <action title="Copy as _Table" showinbar="false" systemcommand="copyastable"/>
+    <action title="P_aste" showinbar="false" systemcommand="paste"/>
+    <action title="_Open" showinbar="false" systemcommand="open"/>
+    <action title="Bookmark" showinbar="false" systemcommand="bookmark"/>
+  </actionbar>
+  <body>
+    <richtext>
+      <pardef id="1" hide="notes web mobile"/>
+      <par def="1">
+        <run>
+          <font size="8pt" name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+        </run>
+        <run>
+          <font size="8pt" color="red" name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+          <field type="text" kind="editable" name="SaveOptions">
+            <code event="defaultvalue">
+              <formula>"0"</formula>
+            </code>
+          </field>
+        </run>
+        <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="7" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+        <run>
+          <font size="8pt" name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+        </run>
+      </par>
+      <pardef id="2"/>
+      <par def="2">
+        <run>
+          <font size="8pt" name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+        </run>
+        <run>
+          <font size="1pt" name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+          <field defaultfocus="true" showdelimiters="false" type="text" kind="editable" name="empty"/>
+        </run>
+        <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="8" containertype="65418" aftercontainercount="1" afterbegincount="4">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+        <run>
+          <font size="8pt" name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+        </run>
+      </par>
+      <table widthtype="fitmargins" refwidth="9.3958in">
+        <tablecolumn width="20.9618%"/>
+        <tablecolumn width="79.0382%"/>
+        <tablerow>
+          <tablecell borderwidth="0px">
+            <pardef id="4" keepwithnext="true" keeptogether="true"/>
+            <par def="4">
+              <run>
+                <font name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+              </run>
+              <run>
+                <font name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+                <field runexitingonchange="true" usenotesstyle="false" height="0.2500in" width="1.5750in" multiline="true" borderstyle="single" lookupeachchar="false" lookupaddressonrefresh="false" type="keyword" kind="editable" name="viewSelect">
+                  <keywords helperbutton="false" recalconchange="true" columns="1" ui="combobox">
+                    <textlist>
+                      <text>By Name</text>
+                      <text>By Surname</text>
+                      <text>By State</text>
+                    </textlist>
+                  </keywords>
+                  <code event="defaultvalue">
+                    <formula>@If(@Environment("xdemo_viewSelect")="";"By Name";@Environment("xdemo_viewSelect"))</formula>
+                  </code>
+                  <code event="exiting">
+                    <lotusscript>Sub Exiting(Source As Field)
 	Call exitViewSelectField()
 End Sub
-'++LotusScript Development Environment:2:2:Entering:1:12
-Sub Entering(Source As Field)
+</lotusscript>
+                  </code>
+                  <code event="entering">
+                    <lotusscript>Sub Entering(Source As Field)
 	
-End Sub<break/>
-    </text>
-  </item>
-  <item name="$$states" summary="false" sign="true">
-    <text>'++LotusScript Development Environment:2:5:(Options):0:66
-
-'++LotusScript Development Environment:2:5:(Forward):0:1
-Declare Sub Exiting(Source As Field)
-
-'++LotusScript Development Environment:2:5:(Declarations):0:2
-
-'++LotusScript Development Environment:2:2:BindEvents:1:129
-Private Sub BindEvents(Byval Objectname_ As String)
-	Static Source As FIELD
-	Set Source = Bind(Objectname_)
-	On Event Exiting From Source Call Exiting
-End Sub
-
-'++LotusScript Development Environment:2:2:Exiting:1:12
-Sub Exiting(Source As Field)
+End Sub</lotusscript>
+                  </code>
+                </field>
+              </run>
+              <run>
+                <font name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+              </run>
+            </par>
+          </tablecell>
+          <tablecell borderwidth="0px">
+            <pardef id="5" keepwithnext="true" keeptogether="true">
+              <code event="hidewhen">
+                <formula>viewSelect != "By State"</formula>
+              </code>
+            </pardef>
+            <par def="5">
+              <run>
+                <font name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+              </run>
+              <run>
+                <font name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+                <field runexitingonchange="true" usenotesstyle="false" height="0.2500in" width="1in" multiline="true" borderstyle="single" lookupeachchar="false" lookupaddressonrefresh="false" type="keyword" kind="editable" name="states">
+                  <keywords helperbutton="false" recalconchange="true" columns="1" ui="combobox">
+                    <formula>@Unique(@DbColumn("":"NoCache";"";"AllContactsByState";1))</formula>
+                  </keywords>
+                  <code event="defaultvalue">
+                    <formula>@If(@Environment("xdemo_state")="";@Subset(@Unique(@DbColumn("":"NoCache";"";"AllContactsByState";1));1);@Environment("xdemo_state"))</formula>
+                  </code>
+                  <code event="exiting">
+                    <lotusscript>Sub Exiting(Source As Field)
 	Call exitStatesField()
-End Sub<break/>
-    </text>
-  </item>
-  <item name="$$cities" summary="false" sign="true">
-    <text>'++LotusScript Development Environment:2:5:(Options):0:66
-
-'++LotusScript Development Environment:2:5:(Forward):0:1
-Declare Sub Exiting(Source As Field)
-
-'++LotusScript Development Environment:2:5:(Declarations):0:2
-
-'++LotusScript Development Environment:2:2:BindEvents:1:129
-Private Sub BindEvents(Byval Objectname_ As String)
-	Static Source As FIELD
-	Set Source = Bind(Objectname_)
-	On Event Exiting From Source Call Exiting
-End Sub
-
-'++LotusScript Development Environment:2:2:Exiting:1:12
-Sub Exiting(Source As Field)
+End Sub</lotusscript>
+                  </code>
+                </field>
+              </run>
+              <run>
+                <font name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+              </run>
+              <run>
+                <font name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+                <field runexitingonchange="true" usenotesstyle="false" height="0.2500in" width="1in" multiline="true" borderstyle="single" lookupeachchar="false" lookupaddressonrefresh="false" type="keyword" kind="editable" name="cities">
+                  <keywords helperbutton="false" recalcchoices="true" columns="1" ui="combobox">
+                    <formula>"All":@Unique(@Unique(@DbLookup("":"NoCache";"";"AllContactsByState";states;6)))</formula>
+                  </keywords>
+                  <code event="defaultvalue">
+                    <formula>@If(@Environment("xdemo_city")="";"All";@Environment("xdemo_city"))</formula>
+                  </code>
+                  <code event="exiting">
+                    <lotusscript>Sub Exiting(Source As Field)
 	Call exitCitiesField()
-End Sub<break/>
-    </text>
-  </item>
-  <item name="SaveOptions" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="viewSelect" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="states" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="cities" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="$Fields">
-    <textlist>
-      <text>cities</text>
-      <text>states</text>
-      <text>viewSelect</text>
-      <text>SaveOptions</text>
-    </textlist>
-  </item>
-  <item name="$Body" sign="true">
-    <rawitemdata type="1">
-gQKC/1oAAQAAAAAAAAAAAKAFAACgBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAACBAAAAAJWHAAAAAAAAAAAAAAAAAQAAAAYAAACDBAEAhf8IAAUAAAjdBgAAiv/+/1AA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4AHgAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAIr/PgCKAAAFADACAAAAAAAAAgUAAggOAAAAAAAAAAsAAAAAAA4A
-AAAMAAEAAQAwAAMAU2F2ZU9wdGlvbnMAYg4BAIQAAAAAAAAAAADeBgAAiv+F/wgABQAACIECgv9a
-AAIAAAAAAAAAAACgBQAAoAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAQAAAACUhwAAAAAAAAAAAAAAAAEAAAAEAAAAgwQCAIX/CAAFAAAIgQKC/1oAAwAAAAAAAAAA
-AKAFAACgBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAJSF
-AAAAAKAFBwAAAAAAAQAAAAQAAACDBAMA3QYBAPv/+/8sAAEAAAABAgAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAABAAAAAAAAAAAAAABc/z4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-DgAAAAAAAAABAAAKAAAAAAEAAAAAAN4GAQD7/6MOoAUoADwAAAAAAAMApBIAAKAFtBCVFwACAAAB
-AQAAgQKC/1oABAAAAAAAAAAAAKAFtBCgBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAIYBAAAAAFSHAAAAAAAAAAAAAAAAAQAAAAQAAACDBAQAhf8IAAUAAArdBgAA9//3
-/yQAAQAAgAAA3AhoAQAAAAAAAAAAZAAAAAAAAAAAAAAAAAD+/1AAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAB4AHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-ALD/FAAAAAZAgARAAAAAAAAAAAAAiv+yAIoCAAUAIAIAAAAAAAACBQAACmIAAAAAAAAACgAAACEA
-YgAAAFQAAQAQAHhkZW1vX3ZpZXdTZWxlY3R8AQEAAAAKAq8AMAASAAEABwBCeSBOYW1lAK4AHgAB
-ABAAeGRlbW9fdmlld1NlbGVjdHwBrgAEALUDAwAHAAwABQAJMFMwRQB2aWV3U2VsZWN0AwAHAAoA
-CABCeSBOYW1lQnkgU3VybmFtZUJ5IFN0YXRlANIIAQAAAAAA0ggJAP///wDeBgAA9/+F/wgABQAA
-CqQSAAG0EHo661gAAgAAAQEAAIECgv9aAAUAAAAAAAAAAAC0EHo6tBAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACGCQAAAABUhwAAAAAAAAAAAAAAAAEAAAAEAAAAu/8+
-AAUAAAAAAGQAAAAwAAAAIgAFAAoAdmlld1NlbGVjdAEACABCeSBTdGF0ZQsCAwAHAAwABQAJMVMy
-UwCDBAUAhf8IAAUAAArdBgAA9//3/yQAAQAAgAAAoAVoAQAAAAAAAAAAZAAAAAAAAAAAAAAAAAD+
-/1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4AHgAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAALD/FAAAAAZAgARAAAAAAAAAAAAAiv8OAYoCAAUAIAIAAAAA
-AAACBQAACpQAAAAAAAAABgAAAFAAlAAAAIYAAQALAHhkZW1vX3N0YXRlAHwBAQAAAAoCrwBmAEwA
-AQAAAAEABwBOb0NhY2hlAB8CAQAAAAEAEgBBbGxDb250YWN0c0J5U3RhdGUAAAAAAAAAAPA/qgSr
-AQAAAAAAAAAA8D9rAq4AGgABAAsAeGRlbW9fc3RhdGUAfAGuAAQAtQMDAAcADAAFAAkwUzBFAHN0
-YXRlcwAATgAAAEAAAQAAAAEABwBOb0NhY2hlAB8CAQAAAAEAEgBBbGxDb250YWN0c0J5U3RhdGUA
-AAAAAAAAAPA/qgSrAQMABwAMAAUACTBTMEUA0ggBAAAAAADSCAkA////AN4GAAD3/4X/CQAFAAAK
-IADdBgAA9//3/yQAAQAAgAAAoAVoAQAAAAAAAAAAZAAAAAAAAAAAAAAAAAD+/1AAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4AHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAALD/FAAAAARAgQRAAAAAAAAAAAAAiv/iAIoCAAUAIAIAAAAAAAACBQAAClIAAAAA
-AAAABgAAAGYAUgAAAEQAAQAKAHhkZW1vX2NpdHl8AQEAAAAKAq8AJgAOAAEAAwBBbGwArgAYAAEA
-CgB4ZGVtb19jaXR5fAGuAAQAtQMDAAcADAAFAAkwUzBFAGNpdGllcwAAZAAAAFYAAQADAEFsbAAB
-AAAAAQAHAE5vQ2FjaGUAHwIBAAAAAQASAEFsbENvbnRhY3RzQnlTdGF0ZQUABgBzdGF0ZXMAAAAA
-AAAAABhAgwWrAasBHwIDAAcADAAFAAkwUzBFANIIAQAAAAAA0ggJAP///wDeBgAA9/+F/wgAAQAA
-CqUGAAAAAIECgv9aAAYAAAAAAAAAAACgBQAAoAUIANACoAVwCEALEA7gELATgBYAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAQAAAACUhKAFCgCgBQoAAABkAAEAAAAEAAAAgwQGAIX/CAAFAAAK
-</rawitemdata>
-  </item>
-</note>
+End Sub</lotusscript>
+                  </code>
+                </field>
+              </run>
+            </par>
+          </tablecell>
+        </tablerow>
+      </table>
+      <pardef id="6" leftmargin="1in" tabs="L0.5000in L1in L1.5000in L2in L2.5000in L3in L3.5000in L4in"/>
+      <par def="6">
+        <run>
+          <font name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+        </run>
+      </par>
+    </richtext>
+  </body>
+</form>

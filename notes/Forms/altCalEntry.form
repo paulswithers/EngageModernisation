@@ -1,12 +1,465 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<note xmlns="http://www.lotus.com/dxl" class="form">
+<form xmlns="http://www.lotus.com/dxl" name="altCalEntry" publicaccess="false" renderpassthrough="true">
+  <body>
+    <richtext>
+      <pardef id="1" leftmargin="1in" rightmargin="100%"/>
+      <par def="1">
+        <run>
+          <font name="Courier New" pitch="fixed" truetype="true" familyid="30"/>
+        </run>
+      </par>
+      <par def="1">
+        <run>
+          <font name="Courier New" pitch="fixed" truetype="true" familyid="30"/>*** RAW FORM TO DEFINE TEST CALENDAR METADATA ***</run>
+      </par>
+      <par def="1">
+        <run>
+          <font name="Courier New" pitch="fixed" truetype="true" familyid="30"/>
+        </run>
+      </par>
+      <par def="1">
+        <run>
+          <font name="Courier New" pitch="fixed" truetype="true" familyid="30"/>*** CAN BE USED FOR DUMMY DATA ENTRY BUT PREFERABLY USE CalendarEntry.xsp ***</run>
+      </par>
+      <par def="1">
+        <run>
+          <font name="Courier New" pitch="fixed" truetype="true" familyid="30"/>
+        </run>
+      </par>
+      <par def="1">
+        <run>
+          <font name="Courier New" pitch="fixed" truetype="true" familyid="30"/>
+        </run>
+      </par>
+      <table rightmargin="100%" widthtype="fixedleft" refwidth="9.5188in">
+        <tablecolumn width="3.1729in"/>
+        <tablecolumn width="3.1729in"/>
+        <tablecolumn width="3.1729in"/>
+        <tablerow>
+          <tablecell>
+            <pardef id="2" keepwithnext="true" keeptogether="true"/>
+            <par def="2">
+              <run>
+                <font style="bold"/>  Field</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <pardef id="3" keepwithnext="true" keeptogether="true"/>
+            <par def="3">
+              <run>
+                <font style="bold"/> Calendar Column</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <pardef id="4" keepwithnext="true" keeptogether="true"/>
+            <par def="4">
+              <run>
+                <font style="bold"/> Sample Data </run>
+            </par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="2">
+              <field usenotesstyle="false" height="0.2500in" width="1.7875in" multiline="true" borderstyle="single" type="datetime" kind="editable" name="CalendarDateTime">
+                <datetimeformat show="datetime" date="yearmonthday" fourdigityearfor21stcentury="true" time="hourminute" zone="never" dateformat="weekdaydaymonthyear" dayformat="twodigitday" monthformat="twodigitmonth" yearformat="fourdigityear" weekdayformat="shortname" dateseparator1=" " dateseparator2="/" dateseparator3="/" timeseparator=":" timeformat24="true" preference="usersetting"/>
+              </field>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="3">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>"$134"</run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30"/>, </run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#3f8080"/>// colCalendarDate</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="4"> 10/08/2010 17:00:00 <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>
+              </run>
+            </par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="2">
+              <field type="number" kind="editable" name="_ViewIcon">
+                <numberformat format="general" digits="2" punctuated="false" parens="false" percent="false" bytes="false"/>
+                <code event="defaultvalue">
+                  <formula>158</formula>
+                </code>
+              </field>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="3">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>"$149"</run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30"/>, </run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#3f8080"/>// colEntryIcon</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="4">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>
+              </run>Examples:</par>
+            <par def="4"> 158, e.g.  <picture width="13px" height="15px">
+                <gif>
+R0lGODlhDQAPAOQAANDg+MjY8P///8jg8NDQ0FjYOMDAwIiIiIDAaKCgoODg4LCwsMD4kDiYOMDA
+eDhgGGBgAICAANCwoPDw8Pjg2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAA
+DQAPAEAIcwAFCBxIcGAAAwIUFCiAgEGBCAAiBjhAgMCCigYMEIgIIMAAjiBBehxAsqTJAQcrVlQg
+oACDBxINLEgggWEDixw9htwZoKfPnz8/JuB4IGSABAcOIFVKAEFOhAooKJiAwEGBBjEFNrQKQUHO
+jztFgg0bMSAAOw==
+</gif>
+              </picture>
+            </par>
+            <par def="4"> 160</par>
+            <par def="4">   63 <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>
+              </run>
+            </par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="2">
+              <field usenotesstyle="false" height="0.2500in" width="1.7875in" multiline="true" borderstyle="single" type="datetime" kind="editable" name="StartDateTIme">
+                <datetimeformat show="datetime" date="yearmonthday" fourdigityearfor21stcentury="true" time="hourminute" zone="never" dateformat="weekdaydaymonthyear" dayformat="twodigitday" monthformat="twodigitmonth" yearformat="fourdigityear" weekdayformat="shortname" dateseparator1=" " dateseparator2="/" dateseparator3="/" timeseparator=":" timeformat24="true" preference="usersetting"/>
+              </field>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="3">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/> "$144"</run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30"/>, </run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#3f8080"/>// colStartTime</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="4">  e.g. 16:00:00  </par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="2">
+              <field usenotesstyle="false" height="0.2500in" width="1.7875in" multiline="true" borderstyle="single" type="datetime" kind="editable" name="EndDateTIme">
+                <datetimeformat show="datetime" date="yearmonthday" fourdigityearfor21stcentury="true" time="hourminute" zone="never" dateformat="weekdaydaymonthyear" dayformat="twodigitday" monthformat="twodigitmonth" yearformat="fourdigityear" weekdayformat="shortname" dateseparator1=" " dateseparator2="/" dateseparator3="/" timeseparator=":" timeformat24="true" preference="usersetting"/>
+              </field>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="3">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>"$146"</run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30"/>, </run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#3f8080"/>// colEndTime</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="4">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>
+              </run>e.g. 17:00:00<run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>
+              </run>
+            </par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="2">
+              <field type="text" kind="editable" name="Subject"/>
+              <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="6" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="3">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>"$147"</run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30"/>, </run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#3f8080"/>// colSubject</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="4">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>
+              </run>@Trim(Subject : xxRoom : xxLocation : xxChair)) <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>
+              </run>
+            </par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="2">
+              <run>
+                <font color="red"/>
+              </run>
+              <field type="text" kind="editable" name="AltSubject">
+                <code event="inputtranslation">
+                  <formula>Subject</formula>
+                </code>
+              </field>
+              <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="9" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+              <run>
+                <font color="red"/>
+              </run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="3">
+              <run>
+                <font color="red"/>
+              </run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>"$151"</run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30"/>, </run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#3f8080"/>// colAltSubject</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="4">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>
+              </run>@Trim(Subject : xxRoom : xxLocation : xxChair))</par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="2">
+              <field usenotesstyle="false" height="0.2500in" width="1.7875in" multiline="true" borderstyle="inset" lookupeachchar="false" lookupaddressonrefresh="false" type="keyword" kind="editable" name="AppointmentType">
+                <keywords helperbutton="false" columns="1" ui="combobox">
+                  <textlist>
+                    <text>1</text>
+                    <text>2</text>
+                    <text>3</text>
+                    <text>4</text>
+                    <text>5</text>
+                  </textlist>
+                </keywords>
+                <code event="defaultvalue">
+                  <formula>"3"</formula>
+                </code>
+              </field>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="3">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>$152"</run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30"/>, </run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#3f8080"/>// colEntryType</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="4">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>
+              </run>AppointmentType</par>
+            <par def="4">  "3" = Meeting</par>
+            <par def="4">  "1" = Appointment etc</par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="2">
+              <field type="names" kind="editable" name="Chair">
+                <code event="defaultvalue">
+                  <formula>@Name([CN];@UserName)</formula>
+                </code>
+                <code event="inputtranslation">
+                  <formula>Chair</formula>
+                </code>
+              </field>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="3">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>"$153"</run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30"/>, </run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#3f8080"/>// colChair</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="4"> @Name([CN];Chair)</par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="2">
+              <field type="number" kind="editable" name="OrgConfidential">
+                <numberformat format="general" varying="true" digits="2" punctuated="false" parens="false" percent="false" bytes="false"/>
+                <code event="defaultvalue">
+                  <formula>""</formula>
+                </code>
+              </field>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="3">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>"$154"</run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30"/>, </run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#3f8080"/>// colConfidential</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="4"> @If(OrgConfidential = "1";1;0)</par>
+            <par def="4"> "1", "0", ""</par>
+            <par def="4"> Leave blank for default - i.e. not confidenitial </par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="2">
+              <field type="text" kind="editable" name="status">
+                <code event="defaultvalue">
+                  <formula>"Accepted"</formula>
+                </code>
+              </field>
+              <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="6" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="3">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/> $160"</run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30"/>, </run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#3f8080"/>// colStatus</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="4"> "Accepted" | "Draft" Etc <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>"</run>
+            </par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="2">
+              <run>
+                <font color="red"/>  TBD</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="3">
+              <run>
+                <font color="red"/>
+              </run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#4200ff"/>"$UserData"</run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30"/>, </run>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#3f8080"/>// colCustomData</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="4">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="red"/>
+              </run>
+            </par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell columnspan="3">
+            <pardef id="5" keepwithnext="true" keeptogether="true"/>
+            <par def="5">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="red"/> Fields below are usually just computed - you can override here if need be </run>
+            </par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="2">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#3f8080"/>
+              </run>
+              <field type="text" kind="editable" name="From">
+                <code event="defaultvalue">
+                  <formula>@Name([CN];Chair)</formula>
+                </code>
+              </field>
+              <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="9" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#3f8080"/>
+              </run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="3">
+              <field usenotesstyle="false" height="0.2500in" width="1.7875in" multiline="true" borderstyle="single" type="datetime" kind="editable" name="PostedDate">
+                <datetimeformat show="date" date="yearmonthday" fourdigityearfor21stcentury="true" time="hourminute" zone="never" dateformat="weekdaydaymonthyear" dayformat="twodigitday" monthformat="twodigitmonth" yearformat="fourdigityear" weekdayformat="shortname" dateseparator1=" " dateseparator2="/" dateseparator3="/" timeseparator=":" timeformat24="true" preference="usersetting"/>
+                <code event="defaultvalue">
+                  <formula>@Today</formula>
+                </code>
+                <code event="inputtranslation">
+                  <formula>CalendarDateTime</formula>
+                </code>
+              </field>
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="red"/>
+              </run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="4">
+              <run>
+                <font name="Courier New" pitch="fixed" truetype="true" familyid="30" color="#3f8080"/>
+              </run>
+            </par>
+          </tablecell>
+        </tablerow>
+      </table>
+      <par def="1"/>
+      <par def="1">Enter agenda details, etc.</par>
+      <par def="1">
+        <field type="richtext" kind="editable" name="Body"/>
+        <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="6" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAEAAAA=
+</compositedata>
+      </par>
+    </richtext>
+  </body>
   <item name="$134" summary="false">
     <rawitemdata type="400">
 AAAAAAAAAAA=
 </rawitemdata>
-  </item>
-  <item name="$Comment" sign="true">
-    <text/>
   </item>
   <item name="Untitled" summary="false">
     <number>0</number>
@@ -14,222 +467,10 @@ AAAAAAAAAAA=
   <item name="Untitled_1" summary="false">
     <number>0</number>
   </item>
-  <item name="$HTMLCode" sign="true">
-    <rawitemdata type="1">
-X/8QAAIADwAHAAAAAAAAAA==
-</rawitemdata>
-  </item>
-  <item name="$TITLE">
-    <text>altCalEntry</text>
-  </item>
-  <item name="$Info" sign="true">
-    <rawitemdata type="1">
-hhgBAIAAAAAAgAAAAQABAP///wAQAAAA
-</rawitemdata>
-  </item>
-  <item name="$Fonts">
-    <rawitemdata type="1">
-i/8oAAEABTVDb3VyaWVyIE5ldwAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
-</rawitemdata>
-  </item>
-  <item name="CalendarDateTime" summary="false">
-    <rawitemdata type="400">
-AAAAAAAAAAA=
-</rawitemdata>
-  </item>
   <item name="_ViewIcon" summary="false">
     <number>0</number>
-  </item>
-  <item name="STARTDATETIME" summary="false">
-    <rawitemdata type="400">
-AAAAAAAAAAA=
-</rawitemdata>
-  </item>
-  <item name="EndDateTime" summary="false">
-    <rawitemdata type="400">
-AAAAAAAAAAA=
-</rawitemdata>
-  </item>
-  <item name="Subject" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="AltSubject" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="AppointmentType" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="Chair" placeholder="true">
-    <rawitemdata type="0"/>
   </item>
   <item name="OrgConfidential" summary="false">
     <number>0</number>
   </item>
-  <item name="status" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="From" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="PostedDate" summary="false">
-    <rawitemdata type="400">
-AAAAAAAAAAA=
-</rawitemdata>
-  </item>
-  <item name="Body" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="$Fields">
-    <textlist>
-      <text>Body</text>
-      <text>PostedDate</text>
-      <text>From</text>
-      <text>status</text>
-      <text>OrgConfidential</text>
-      <text>Chair</text>
-      <text>AppointmentType</text>
-      <text>AltSubject</text>
-      <text>Subject</text>
-      <text>EndDateTIme</text>
-      <text>StartDateTIme</text>
-      <text>_ViewIcon</text>
-      <text>CalendarDateTime</text>
-    </textlist>
-  </item>
-  <item name="$Body" sign="true">
-    <rawitemdata type="1">
-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
-</rawitemdata>
-  </item>
-  <item name="$Flags">
-    <text/>
-  </item>
-</note>
+</form>

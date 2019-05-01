@@ -36,12 +36,13 @@ Sub exitViewSelectField()
 	
 	If (fieldVal = "By Name") Then
 		Call session.SetEnvironmentVar("xdemo_view", "mbContactsName")
-		Call ws.ReloadWindow()
+		Call ws.ReloadWindow()	'Sets initial focus, so .currentField is set
 	ElseIf (fieldVal = "By Surname") Then
 		Call session.SetEnvironmentVar("xdemo_view", "mbContactsSurname")
-		Call ws.ReloadWindow()
+		Call ws.ReloadWindow()	'Sets initial focus, so .currentField is set
 	ElseIf (fieldVal = "By State") Then
 		Call session.SetEnvironmentVar("xdemo_view", "mbContactsState")
+		Call ws.ReloadWindow()	'Sets initial focus, so .currentField is set
 		Set db = session.CurrentDatabase
 		Call ws.SetTargetFrame("view")
 		Call ws.ComposeDocument(db.server, db.filePath, "statesView")
@@ -69,6 +70,7 @@ Sub exitCitiesField
 	
 	Dim db As NotesDatabase
 	Call session.SetEnvironmentVar("xdemo_city", uidoc.FieldGetText("cities"))
+	Call ws.Reloadwindow()	'Sets initial focus, so .currentField is set
 	
 	Set db = session.CurrentDatabase
 	Call ws.SetTargetFrame("view")
@@ -99,6 +101,7 @@ Sub exitStatesField
 	
 	Call session.SetEnvironmentVar("xdemo_state", uidoc.Fieldgettext("states"))
 	Call session.SetEnvironmentVar("xdemo_city", "All")
+	Call ws.Reloadwindow()	'Sets initial focus, so .currentField is set
 	
 	Set db = session.CurrentDatabase
 	Call ws.SetTargetFrame("view")

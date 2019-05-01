@@ -1,89 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<note xmlns="http://www.lotus.com/dxl" class="form">
-  <item name="$Comment" sign="true">
-    <text/>
-  </item>
-  <item name="$HTMLCode" sign="true">
-    <rawitemdata type="1">
-X/8QAAIADwAHAAAAAAAAAA==
-</rawitemdata>
-  </item>
-  <item name="$TITLE">
-    <text>mbContact</text>
-  </item>
-  <item name="$Info" sign="true">
-    <rawitemdata type="1">
-hhgBAIAAAAAAgAAAAQABAP///wAQAAAA
-</rawitemdata>
-  </item>
-  <item name="$Flags">
-    <text/>
-  </item>
-  <item name="FirstName" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="LastName" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="EMail" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="City" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="$Fields">
-    <textlist>
-      <text>City</text>
-      <text>Email</text>
-      <text>LastName</text>
-      <text>FirstName</text>
-    </textlist>
-  </item>
-  <item name="$Body" sign="true">
-    <rawitemdata type="1">
-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
-AAo=
-</rawitemdata>
-  </item>
-</note>
+<form xmlns="http://www.lotus.com/dxl" name="mbContact" publicaccess="false" renderpassthrough="true">
+  <body>
+    <richtext>
+      <pardef id="1"/>
+      <par def="1"/>
+      <table widthtype="fitmargins" refwidth="9.2083in">
+        <tablecolumn width="16.7813%"/>
+        <tablecolumn width="83.2188%"/>
+        <tablerow>
+          <tablecell columnspan="2">
+            <pardef id="4" leftmargin="0.0785in" spacebefore="1.5" spaceafter="1.5" keepwithnext="true" keeptogether="true"/>
+            <par def="4">
+              <run>
+                <font size="12pt" color="#4181c0" style="bold"/>
+                <field type="text" kind="computedfordisplay" name="Name">
+                  <code event="defaultvalue">
+                    <formula>FirstName + " " + LastName</formula>
+                  </code>
+                </field>
+              </run>
+              <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="7" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+              <run>
+                <font size="12pt" style="bold" color="#4181c0"/>
+              </run>
+            </par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <pardef id="3" leftmargin="0.0785in" spacebefore="1.5" spaceafter="1.5" keepwithnext="true" keeptogether="true"/>
+            <par def="3">
+              <run>
+                <font style="bold" color="#4181c0"/>First Name:</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <pardef id="5" leftmargin="0.0785in" spacebefore="1.5" spaceafter="1.5" keepwithnext="true" keeptogether="true"/>
+            <par def="5">
+              <field type="text" kind="editable" name="FirstName"/>
+              <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="7" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+            </par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="3">
+              <run>
+                <font style="bold" color="#4181c0"/>Last Name:</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="5">
+              <field type="text" kind="editable" name="LastName"/>
+              <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="6" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+            </par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="3">
+              <run>
+                <font style="bold" color="#4181c0"/>Email:</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="5">
+              <field type="text" kind="editable" name="Email"/>
+              <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="6" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+            </par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="3">
+              <run>
+                <font style="bold" color="#4181c0"/>City:</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="5">
+              <actionhotspot hotspotstyle="none">
+                <code event="click">
+                  <formula>@URLOpen("http://maps.apple.com/?q=" + @ReplaceSubstring(@URLEncode("Domino";City);"%20";"+"))</formula>
+                </code>
+                <field type="text" kind="editable" name="City"/>
+                <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="9" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+              </actionhotspot>
+            </par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="3">
+              <run>
+                <font style="bold" color="#4181c0"/>State:</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="5">
+              <field type="text" kind="computedfordisplay" name="StateName">
+                <code event="defaultvalue">
+                  <formula>@ProperCase(@DbLookup("":"NoCache";"";"AllStates";State;2;[FailSilent]))</formula>
+                </code>
+              </field>
+              <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="6" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+            </par>
+          </tablecell>
+        </tablerow>
+      </table>
+      <par def="1"/>
+    </richtext>
+  </body>
+</form>

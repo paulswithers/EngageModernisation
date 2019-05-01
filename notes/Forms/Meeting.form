@@ -1,48 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<note xmlns="http://www.lotus.com/dxl" class="form">
-  <item name="$HTMLCode" sign="true">
-    <rawitemdata type="1">
-X/8QAAIADwAHAAAAAAAAAA==
-</rawitemdata>
-  </item>
-  <item name="$TITLE">
-    <text>Meeting</text>
-  </item>
-  <item name="$Comment" sign="true">
-    <text/>
-  </item>
-  <item name="$Info" sign="true">
-    <rawitemdata type="1">
-hhgBAIAAAAAAgAAAAQABAP///wAQAAAA
-</rawitemdata>
-  </item>
-  <item name="$Flags">
-    <text/>
-  </item>
-  <item name="Date" summary="false">
-    <rawitemdata type="400">
-AAAAAAAAAAA=
-</rawitemdata>
-  </item>
-  <item name="Subject" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="$Fields">
-    <textlist>
-      <text>Subject</text>
-      <text>Date</text>
-    </textlist>
-  </item>
-  <item name="$Body" sign="true">
-    <rawitemdata type="1">
-gQKC/1oAAQAAAAAAAAAAAKAFAACgBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAABAAAAAJSHAAAAAAAAAAAAAAAAAQAAAAQAAACDBAEAhf8IAAEAAArdBgAAiv/+/1QA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4AHgAAAAAAABIgAMAAAAAAAECAgIB
-AQEBBwQAAAAAAAAAAAAAAAAAACAvLzqK/ygAigAABAAwAgAAAAAAAAABAAAKAAAAAAAAAAAEAAAA
-AABEYXRl3gYAAIr/hf8IAAEAAArdBgAAiv/+/1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAB4AHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIr/LACKAAAF
-ADACAAAAAAAAAgEAAAoAAAAAAAAAAAcAAAAAAFN1YmplY3QAYg4BAIQAAAAAAAAAAADeBgAAiv+F
-/wgAAQAACg==
-</rawitemdata>
-  </item>
-</note>
+<form xmlns="http://www.lotus.com/dxl" name="Meeting" publicaccess="false" renderpassthrough="true">
+  <body>
+    <richtext>
+      <pardef id="1"/>
+      <par def="1">
+        <field type="datetime" kind="editable" name="Date">
+          <datetimeformat show="date" date="yearmonthday" fourdigityearfor21stcentury="true" zone="never" dateformat="weekdaydaymonthyear" dayformat="twodigitday" monthformat="twodigitmonth" yearformat="fourdigityear" weekdayformat="shortname" dateseparator1=" " dateseparator2="/" dateseparator3="/" timeseparator=":" timeformat24="true" preference="usersetting"/>
+        </field>
+        <field type="text" kind="editable" name="Subject"/>
+        <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="12" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+      </par>
+    </richtext>
+  </body>
+</form>

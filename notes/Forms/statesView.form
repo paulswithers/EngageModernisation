@@ -1,8 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<note xmlns="http://www.lotus.com/dxl" class="form">
-  <item name="$Comment" sign="true">
-    <text/>
-  </item>
+<form xmlns="http://www.lotus.com/dxl" name="statesView" publicaccess="false" renderpassthrough="true">
+  <code event="postopen">
+    <lotusscript>Sub Postopen(Source As Notesuidocument)
+	Call source.Refresh()
+End Sub</lotusscript>
+  </code>
+  <body>
+    <richtext>
+      <pardef id="1" hide="notes web mobile"/>
+      <par def="1">
+        <run>
+          <font size="8pt" name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+        </run>
+        <run>
+          <font size="8pt" color="red" name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+          <field type="text" kind="editable" name="SaveOptions">
+            <code event="defaultvalue">
+              <formula>"0"</formula>
+            </code>
+          </field>
+        </run>
+        <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="7" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+        <run>
+          <font size="8pt" name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+        </run>
+        <run>
+          <font size="8pt" name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+          <field type="text" kind="computedfordisplay" name="stateCity">
+            <code event="defaultvalue">
+              <formula>@If(@Environment("xdemo_city") = "";@Environment("xdemo_state") + "~All";@Environment("xdemo_state") + "~" + @Environment("xdemo_city"))</formula>
+            </code>
+          </field>
+        </run>
+        <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="13" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+        <run>
+          <font size="8pt" name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+        </run>
+      </par>
+      <pardef id="2"/>
+      <par def="2">
+        <run>
+          <font size="8pt" name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+        </run>
+      </par>
+      <par def="2">
+        <run>
+          <font name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+        </run>
+        <embeddedview name="mbContactsState" widthtype="fitwindow" heighttype="fitwindow" height="3.2500in">
+          <code event="showsinglecategory">
+            <formula>@If(@Environment("xdemo_city") = "";@Environment("xdemo_state") + "~All";@Environment("xdemo_state") + "~" + @Environment("xdemo_city"))</formula>
+          </code>
+        </embeddedview>
+        <run>
+          <font name="Verdana" pitch="variable" truetype="true" familyid="20"/>
+        </run>
+      </par>
+    </richtext>
+  </body>
   <item name="$$viewSelect" summary="false" sign="true">
     <text>'++LotusScript Development Environment:2:5:(Options):0:66
 
@@ -45,75 +104,4 @@ Sub Exiting(Source As Field)
 End Sub<break/>
     </text>
   </item>
-  <item name="$HTMLCode" sign="true">
-    <rawitemdata type="1">
-X/8QAAIADwAHAAAAAAAAAA==
-</rawitemdata>
-  </item>
-  <item name="$TITLE">
-    <text>statesView</text>
-  </item>
-  <item name="$Info" sign="true">
-    <rawitemdata type="1">
-hhgBAIAAAAAAgAAAAQABAP///wAQAAAA
-</rawitemdata>
-  </item>
-  <item name="$Flags">
-    <text/>
-  </item>
-  <item name="$Fonts">
-    <rawitemdata type="1">
-i/8oAAEABSZWZXJkYW5hAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
-</rawitemdata>
-  </item>
-  <item name="$$FormScript" summary="false" sign="true">
-    <text>'++LotusScript Development Environment:2:5:(Options):0:66
-
-'++LotusScript Development Environment:2:5:(Forward):0:1
-Declare Sub Postopen(Source As Notesuidocument)
-
-'++LotusScript Development Environment:2:5:(Declarations):0:2
-
-'++LotusScript Development Environment:2:2:BindEvents:1:129
-Private Sub BindEvents(Byval Objectname_ As String)
-	Static Source As NOTESUIDOCUMENT
-	Set Source = Bind(Objectname_)
-	On Event Postopen From Source Call Postopen
-End Sub
-
-'++LotusScript Development Environment:2:2:Postopen:1:12
-Sub Postopen(Source As Notesuidocument)
-	Call source.Refresh()
-End Sub<break/>
-    </text>
-  </item>
-  <item name="SaveOptions" placeholder="true">
-    <rawitemdata type="0"/>
-  </item>
-  <item name="$Fields">
-    <text>SaveOptions</text>
-  </item>
-  <item name="$Body" sign="true">
-    <rawitemdata type="1">
-gQKC/1oAAQAAAAAAAAAAAKAFAACgBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAACBAAAAAJWHAAAAAAAAAAAAAAAAAQAAAAYAAACDBAEAhf8IAAUAAAjdBgAAiv/+/1AA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4AHgAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAIr/PgCKAAAFADACAAAAAAAAAgUAAggOAAAAAAAAAAsAAAAAAA4A
-AAAMAAEAAQAwAAMAU2F2ZU9wdGlvbnMAYg4BAIQAAAAAAAAAAADeBgAAiv+F/wgABQAACN0GAACK
-//7/UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgAeAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiv/CAIABAAUAMAIAAAAAAAACBQAACJQAAAAAAAAACQAA
-AAAAlAAAAHQAAQAKAHhkZW1vX2NpdHl8AQEAAAAKAq8AVgAiAAEACwB4ZGVtb19zdGF0ZQB8AQEA
-BAB+QWxsIgKuADQAAQALAHhkZW1vX3N0YXRlAHwBAQABAH4AIgIBAAoAeGRlbW9fY2l0eXwBIgKu
-AAQAtQMDAAcAHgAXAAk2UzdTMTNTMTRTMjBTMjFTMjJTMjNTAHN0YXRlQ2l0eQBiDgEAhAAAAAAA
-AAAAAN4GAACK/4X/CAAFAAAIgQKC/1oAAgAAAAAAAAAAAKAFAACgBQAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAJSHAAAAAAAAAAAAAAAAAQAAAAQAAACDBAIA
-hf8IAAUAAAiBAoMEAgCF/wgABQAACt0GAACt/3H/MgAAAAAAAwACABAAAAAAAAAAAAAAAAAAAAAA
-AAAAAABtYkNvbnRhY3RzU3RhdGUArf8cABMACAAAABAAbWJDb250YWN0c1N0YXRlAOr/PgATAKlE
-AABkAEgSAQAACgAAAAAAAAAAAQAACgEAAAoAAAUA////AAEAAAAAAAAAAAAAAAAAAAAAAAAA7f+0
-AAIAAAAAAAAAlAAAAAAAAAAAAAAAAAAAAAAAAACUAAAAdAABAAoAeGRlbW9fY2l0eXwBAQAAAAoC
-rwBWACIAAQALAHhkZW1vX3N0YXRlAHwBAQAEAH5BbGwiAq4ANAABAAsAeGRlbW9fc3RhdGUAfAEB
-AAEAfgAiAgEACgB4ZGVtb19jaXR5fAEiAq4ABAC1AwMABwAeABcACTZTN1MxM1MxNFMyMFMyMVMy
-MlMyM1MArgLeBgAArgCF/wgABQAACg==
-</rawitemdata>
-  </item>
-</note>
+</form>

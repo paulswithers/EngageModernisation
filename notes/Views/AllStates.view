@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<note xmlns="http://www.lotus.com/dxl" class="view">
+  <item name="$FormulaClass" sign="true">
+    <text>1</text>
+  </item>
+  <item name="$TITLE" sign="true">
+    <text>AllStates</text>
+  </item>
+  <item name="$Index" sign="true">
+    <text/>
+  </item>
+  <item name="$Formula" summary="true" sign="true">
+    <formula compiled="true">
+VAAFACQAIAAEAAMABAAJAAQAS2V5TmFtZSRDb25mbGljdCRSRUYEAAQAAAAeAAUABABGb3JtAQAF
+AFN0YXRlAAoCBAAEAAMABwAMAAUACTNTNFMA
+</formula>
+  </item>
+  <item name="$Collation" summary="true">
+    <rawitemdata type="2">
+EAABAABEgGYAAAADAEtleQ==
+</rawitemdata>
+  </item>
+  <item name="$Collation1" summary="true">
+    <rawitemdata type="2">
+EAABAABEgGYAAAADAEtleQ==
+</rawitemdata>
+  </item>
+  <item name="$Collation2" summary="true">
+    <rawitemdata type="2">
+EAABAABEgWYAAAADAEtleQ==
+</rawitemdata>
+  </item>
+  <item name="$Collation3" summary="true">
+    <rawitemdata type="2">
+EQABAABEgGYAAAAEAE5hbWU=
+</rawitemdata>
+  </item>
+  <item name="$Collation4" summary="true">
+    <rawitemdata type="2">
+EQABAABEgWYAAAAEAE5hbWU=
+</rawitemdata>
+  </item>
+  <item name="$ViewFormat" summary="true" sign="true">
+    <rawitemdata type="5">
+AQACAAoACAAAAFZDAQMDAAMAAAAAAFAAAQAACgAAAAAAAAAAAAICAAAAVkMAAwQABAAAAAAAoAAB
+AAAKAAAAAAAAAAAAAgIAAABLZXlLZXlOYW1lTmFtZSYAAQAAAAEBAAkBAAAKAQEOCgAAAQCtKwEA
+AQABAAAAAAAAAAAAV0MBAQAJAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA//8AAAAAAAAAAAAAAAAA
+AFdDAQEACQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAP//AAAAAAAAAAAAAAAAAABCAAAAAAABAP//
+/wAFAP///wABAAAAAAAAAAAAAAAAAAEA////AAEA////AAAAAQAAAAAAAQAAAAAAAQAAAAAAAAAI
+AAAAAAABAA==
+</rawitemdata>
+  </item>
+  <item name="$Comment" sign="true">
+    <text/>
+  </item>
+  <item name="$Flags">
+    <text>Y</text>
+  </item>
+  <item name="$WebFlags">
+    <text>A</text>
+  </item>
+  <item name="$SelQuery" sign="true">
+    <rawitemdata type="f">
+gQYAAAAAif8RAAAAAAABAAUAU3RhdGUA
+</rawitemdata>
+  </item>
+</note>

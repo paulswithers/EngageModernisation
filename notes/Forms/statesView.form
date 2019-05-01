@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<note xmlns="http://www.lotus.com/dxl" class="form">
+  <item name="$Comment" sign="true">
+    <text/>
+  </item>
+  <item name="$$viewSelect" summary="false" sign="true">
+    <text>'++LotusScript Development Environment:2:5:(Options):0:66
+
+'++LotusScript Development Environment:2:5:(Forward):0:1
+Declare Sub Exiting(Source As Field)
+
+'++LotusScript Development Environment:2:5:(Declarations):0:2
+
+'++LotusScript Development Environment:2:2:BindEvents:1:129
+Private Sub BindEvents(Byval Objectname_ As String)
+	Static Source As FIELD
+	Set Source = Bind(Objectname_)
+	On Event Exiting From Source Call Exiting
+End Sub
+
+'++LotusScript Development Environment:2:2:Exiting:1:12
+Sub Exiting(Source As Field)
+	Dim ws As New NotesUIWorkspace
+	Dim session As New NotesSession
+	Dim db As notesdatabase
+	Dim uidoc As NotesUIDocument
+	Dim fieldVal As String, viewName As String
+	
+	Set uidoc = ws.CurrentDocument
+	fieldVal = uidoc.FieldGetText("viewSelect")
+	Call session.SetEnvironmentVar("xdemo_viewSelect", fieldVal)
+	
+	If (fieldVal = "By Name") Then
+		Call session.SetEnvironmentVar("xdemo_view", "mbContactsName")
+		Call ws.ReloadWindow()
+	Elseif (fieldVal = "By Surname") Then
+		Call session.SetEnvironmentVar("xdemo_view", "mbContactsSurname")
+		Call ws.ReloadWindow()
+	Elseif (viewVal = "By State") Then
+		Call session.SetEnvironmentVar("xdemo_view", "mbContactsState")
+		Set db = session.CurrentDatabase
+		Call ws.SetTargetFrame("view")
+		Call ws.ComposeDocument(db.server, db.filePath, states)
+	End If
+End Sub<break/>
+    </text>
+  </item>
+  <item name="$HTMLCode" sign="true">
+    <rawitemdata type="1">
+X/8QAAIADwAHAAAAAAAAAA==
+</rawitemdata>
+  </item>
+  <item name="$TITLE">
+    <text>statesView</text>
+  </item>
+  <item name="$Info" sign="true">
+    <rawitemdata type="1">
+hhgBAIAAAAAAgAAAAQABAP///wAQAAAA
+</rawitemdata>
+  </item>
+  <item name="$Flags">
+    <text/>
+  </item>
+  <item name="$Fonts">
+    <rawitemdata type="1">
+i/8oAAEABSZWZXJkYW5hAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+</rawitemdata>
+  </item>
+  <item name="$$FormScript" summary="false" sign="true">
+    <text>'++LotusScript Development Environment:2:5:(Options):0:66
+
+'++LotusScript Development Environment:2:5:(Forward):0:1
+Declare Sub Postopen(Source As Notesuidocument)
+
+'++LotusScript Development Environment:2:5:(Declarations):0:2
+
+'++LotusScript Development Environment:2:2:BindEvents:1:129
+Private Sub BindEvents(Byval Objectname_ As String)
+	Static Source As NOTESUIDOCUMENT
+	Set Source = Bind(Objectname_)
+	On Event Postopen From Source Call Postopen
+End Sub
+
+'++LotusScript Development Environment:2:2:Postopen:1:12
+Sub Postopen(Source As Notesuidocument)
+	Call source.Refresh()
+End Sub<break/>
+    </text>
+  </item>
+  <item name="SaveOptions" placeholder="true">
+    <rawitemdata type="0"/>
+  </item>
+  <item name="$Fields">
+    <text>SaveOptions</text>
+  </item>
+  <item name="$Body" sign="true">
+    <rawitemdata type="1">
+gQKC/1oAAQAAAAAAAAAAAKAFAACgBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAACBAAAAAJWHAAAAAAAAAAAAAAAAAQAAAAYAAACDBAEAhf8IAAUAAAjdBgAAiv/+/1AA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4AHgAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAIr/PgCKAAAFADACAAAAAAAAAgUAAggOAAAAAAAAAAsAAAAAAA4A
+AAAMAAEAAQAwAAMAU2F2ZU9wdGlvbnMAYg4BAIQAAAAAAAAAAADeBgAAiv+F/wgABQAACN0GAACK
+//7/UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgAeAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiv/CAIABAAUAMAIAAAAAAAACBQAACJQAAAAAAAAACQAA
+AAAAlAAAAHQAAQAKAHhkZW1vX2NpdHl8AQEAAAAKAq8AVgAiAAEACwB4ZGVtb19zdGF0ZQB8AQEA
+BAB+QWxsIgKuADQAAQALAHhkZW1vX3N0YXRlAHwBAQABAH4AIgIBAAoAeGRlbW9fY2l0eXwBIgKu
+AAQAtQMDAAcAHgAXAAk2UzdTMTNTMTRTMjBTMjFTMjJTMjNTAHN0YXRlQ2l0eQBiDgEAhAAAAAAA
+AAAAAN4GAACK/4X/CAAFAAAIgQKC/1oAAgAAAAAAAAAAAKAFAACgBQAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAJSHAAAAAAAAAAAAAAAAAQAAAAQAAACDBAIA
+hf8IAAUAAAiBAoMEAgCF/wgABQAACt0GAACt/3H/MgAAAAAAAwACABAAAAAAAAAAAAAAAAAAAAAA
+AAAAAABtYkNvbnRhY3RzU3RhdGUArf8cABMACAAAABAAbWJDb250YWN0c1N0YXRlAOr/PgATAKlE
+AABkAEgSAQAACgAAAAAAAAAAAQAACgEAAAoAAAUA////AAEAAAAAAAAAAAAAAAAAAAAAAAAA7f+0
+AAIAAAAAAAAAlAAAAAAAAAAAAAAAAAAAAAAAAACUAAAAdAABAAoAeGRlbW9fY2l0eXwBAQAAAAoC
+rwBWACIAAQALAHhkZW1vX3N0YXRlAHwBAQAEAH5BbGwiAq4ANAABAAsAeGRlbW9fc3RhdGUAfAEB
+AAEAfgAiAgEACgB4ZGVtb19jaXR5fAEiAq4ABAC1AwMABwAeABcACTZTN1MxM1MxNFMyMFMyMVMy
+MlMyM1MArgLeBgAArgCF/wgABQAACg==
+</rawitemdata>
+  </item>
+</note>

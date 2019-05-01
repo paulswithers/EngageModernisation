@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<note xmlns="http://www.lotus.com/dxl" class="form">
+  <item name="$TITLE">
+    <text>BettyZechman.png</text>
+  </item>
+  <item name="$FlagsExt">
+    <text>D</text>
+  </item>
+  <item name="$FileModDT" sign="true">
+    <datetime dst="true">20101015T195310,66-04</datetime>
+  </item>
+  <item name="$EditFilePath">
+    <text>C:\Users\priand\AppData\Local\Temp\1\notes5CC0E6\~BettyZechman3.png</text>
+  </item>
+  <item name="$Flags">
+    <text>345CgQ$</text>
+  </item>
+  <item name="$FileNames" sign="true">
+    <text>BettyZechman.png</text>
+  </item>
+</note>

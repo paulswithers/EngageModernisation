@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frameset xmlns="http://www.lotus.com/dxl" name="mobile" publicaccess="false" rows="15% 80%" spacing="0px" borderwidth="0px" bordercolor="none">
+  <frame name="nav" border3d="false">
+    <namedelementlink type="form" name="Nav"/>
+  </frame>
+  <frame name="view">
+    <namedelementlink type="view">
+      <code event="value">
+        <formula>@If(@Environment("xdemo_view") = "";"mbContactsName";@Environment("xdemo_view") = "mbContactsState";"statesView";@Environment("xdemo_view"))</formula>
+      </code>
+      <code event="namedelementkind">
+        <formula>@If(@Environment("xdemo_view") = "mbContactsState";"Form";"View")</formula>
+      </code>
+    </namedelementlink>
+  </frame>
+</frameset>

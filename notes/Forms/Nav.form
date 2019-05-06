@@ -8,6 +8,9 @@ Use "mobileScript"
 </lotusscript>
     </code>
   </globals>
+  <code event="windowtitle">
+    <formula>"XPages Extension Library"</formula>
+  </code>
   <actionbar bgcolor="#f0f0f0" bordercolor="black">
     <actionbuttonstyle bgcolor="#f0f0f0"/>
     <font color="system"/>

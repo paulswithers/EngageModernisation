@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<frameset xmlns="http://www.lotus.com/dxl" name="main" publicaccess="false" rows="15% 80%" spacing="0px" borderwidth="0px" bordercolor="none">
-  <frame name="nav" border3d="false">
-    <namedelementlink type="form" name="Nav"/>
-  </frame>
-  <frame name="view">
-    <namedelementlink type="view">
+<frameset xmlns="http://www.lotus.com/dxl" name="main" publicaccess="false" spacing="0px" bordercolor="none">
+  <frame>
+    <namedelementlink type="frameset">
       <code event="value">
-        <formula>@If(@Environment("xdemo_view") = "";"mbContactsName";@Environment("xdemo_view") = "mbContactsState";"statesView";@Environment("xdemo_view"))</formula>
+        <formula>@If(@Platform = "iOS";"mobile";"FAIL")</formula>
       </code>
       <code event="namedelementkind">
-        <formula>@If(@Environment("xdemo_view") = "mbContactsState";"Form";"View")</formula>
+        <formula>"Frameset"</formula>
       </code>
     </namedelementlink>
   </frame>

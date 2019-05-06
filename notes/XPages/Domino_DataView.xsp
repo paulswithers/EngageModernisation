@@ -219,6 +219,14 @@ return href}]]></xe:this.href>
 							</xp:dominoView>
 						</xe:this.data>
 						<xp:this.facets>
+							<xp:button value="Export to Excel" id="button2"
+								xp:key="pagerTopLeft">
+							<xp:eventHandler event="onclick" submit="true"
+								refreshMode="complete">
+								<xp:this.action><![CDATA[#{javascript:sessionScope.put("ids", getComponent("dataView4").getSelectedIds());
+print (sessionScope.ids);
+context.redirectToPage("ContactsExport.xsp");}]]></xp:this.action>
+							</xp:eventHandler></xp:button>
 							<xp:pager layout="Previous Group Next" id="pager1"
 								xp:key="pagerTopRight" partialRefresh="true" partialExecute="true">
 							</xp:pager>

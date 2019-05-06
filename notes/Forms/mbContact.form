@@ -1,16 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.lotus.com/dxl" name="mbContact" publicaccess="false" renderpassthrough="true">
+  <actionbar bgcolor="#f0f0f0" bordercolor="black">
+    <actionbuttonstyle bgcolor="#f0f0f0"/>
+    <font color="system"/>
+    <border style="solid" width="0px 0px 1px"/>
+    <action title="Categori_ze" showinbar="false" systemcommand="categorize"/>
+    <action title="_Edit Document" showinbar="false" systemcommand="edit"/>
+    <action title="_Send Document" showinbar="false" systemcommand="send"/>
+    <action title="_Forward" showinbar="false" systemcommand="forward"/>
+    <action title="_Move To Folder..." showinbar="false" systemcommand="movetofolder"/>
+    <action title="_Remove From Folder" showinbar="false" systemcommand="removefromfolder"/>
+    <action title="_Read" showinbar="false" systemcommand="markread"/>
+    <action title="_Unread" showinbar="false" systemcommand="markunread"/>
+    <action title="_Open in New Window" showinbar="false" systemcommand="openinnewwindow"/>
+    <action title="_Print..." showinbar="false" systemcommand="print"/>
+    <action title="_Delete" showinbar="false" systemcommand="delete"/>
+    <action title="_Document Properties" showinbar="false" systemcommand="properties"/>
+    <action title="C_ut" showinbar="false" systemcommand="cut"/>
+    <action title="_Copy" showinbar="false" systemcommand="copy"/>
+    <action title="Copy as Document _Link" showinbar="false" systemcommand="copyasdoclink"/>
+    <action title="Copy as _Table" showinbar="false" systemcommand="copyastable"/>
+    <action title="P_aste" showinbar="false" systemcommand="paste"/>
+    <action title="_Open" showinbar="false" systemcommand="open"/>
+    <action title="Bookmark" showinbar="false" systemcommand="bookmark"/>
+  </actionbar>
   <body>
     <richtext>
-      <pardef id="1"/>
-      <par def="1"/>
+      <pardef id="1" hide="notes web mobile"/>
+      <par def="1">
+        <run>
+          <font size="8pt" color="red"/>
+          <field type="text" kind="computedfordisplay" name="StateName">
+            <code event="defaultvalue">
+              <formula>@ProperCase(@DbLookup("":"NoCache";"";"AllStates";State;2;[FailSilent]))</formula>
+            </code>
+          </field>
+        </run>
+        <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="7" containertype="65418" aftercontainercount="1" afterbegincount="3">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+      </par>
+      <pardef id="2"/>
+      <par def="2"/>
       <table widthtype="fitmargins" refwidth="9.2083in">
         <tablecolumn width="16.7813%"/>
         <tablecolumn width="83.2188%"/>
         <tablerow>
           <tablecell columnspan="2">
-            <pardef id="4" leftmargin="0.0785in" spacebefore="1.5" spaceafter="1.5" keepwithnext="true" keeptogether="true"/>
-            <par def="4">
+            <pardef id="5" leftmargin="0.0785in" spacebefore="1.5" spaceafter="1.5" keepwithnext="true" keeptogether="true"/>
+            <par def="5">
               <run>
                 <font size="12pt" color="#4181c0" style="bold"/>
                 <field type="text" kind="computedfordisplay" name="Name">
@@ -30,15 +68,15 @@ Yg4BAIQAAAAAAAAAAAA=
         </tablerow>
         <tablerow>
           <tablecell>
-            <pardef id="3" leftmargin="0.0785in" spacebefore="1.5" spaceafter="1.5" keepwithnext="true" keeptogether="true"/>
-            <par def="3">
+            <pardef id="4" leftmargin="0.0785in" spacebefore="1.5" spaceafter="1.5" keepwithnext="true" keeptogether="true"/>
+            <par def="4">
               <run>
                 <font style="bold" color="#4181c0"/>First Name:</run>
             </par>
           </tablecell>
           <tablecell>
-            <pardef id="5" leftmargin="0.0785in" spacebefore="1.5" spaceafter="1.5" keepwithnext="true" keeptogether="true"/>
-            <par def="5">
+            <pardef id="6" leftmargin="0.0785in" spacebefore="1.5" spaceafter="1.5" keepwithnext="true" keeptogether="true"/>
+            <par def="6">
               <field type="text" kind="editable" name="FirstName"/>
               <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="7" containertype="65418" aftercontainercount="1" afterbegincount="3">
 Yg4BAIQAAAAAAAAAAAA=
@@ -48,13 +86,13 @@ Yg4BAIQAAAAAAAAAAAA=
         </tablerow>
         <tablerow>
           <tablecell>
-            <par def="3">
+            <par def="4">
               <run>
                 <font style="bold" color="#4181c0"/>Last Name:</run>
             </par>
           </tablecell>
           <tablecell>
-            <par def="5">
+            <par def="6">
               <field type="text" kind="editable" name="LastName"/>
               <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="6" containertype="65418" aftercontainercount="1" afterbegincount="3">
 Yg4BAIQAAAAAAAAAAAA=
@@ -64,13 +102,13 @@ Yg4BAIQAAAAAAAAAAAA=
         </tablerow>
         <tablerow>
           <tablecell>
-            <par def="3">
+            <par def="4">
               <run>
                 <font style="bold" color="#4181c0"/>Email:</run>
             </par>
           </tablecell>
           <tablecell>
-            <par def="5">
+            <par def="6">
               <field type="text" kind="editable" name="Email"/>
               <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="6" containertype="65418" aftercontainercount="1" afterbegincount="3">
 Yg4BAIQAAAAAAAAAAAA=
@@ -80,16 +118,16 @@ Yg4BAIQAAAAAAAAAAAA=
         </tablerow>
         <tablerow>
           <tablecell>
-            <par def="3">
+            <par def="4">
               <run>
                 <font style="bold" color="#4181c0"/>City:</run>
             </par>
           </tablecell>
           <tablecell>
-            <par def="5">
+            <par def="6">
               <actionhotspot hotspotstyle="none">
                 <code event="click">
-                  <formula>@URLOpen("http://maps.apple.com/?q=" + @ReplaceSubstring(@URLEncode("Domino";City);"%20";"+"))</formula>
+                  <formula>@URLOpen("http://maps.apple.com/?q=" + @ReplaceSubstring(@URLEncode("Domino";City + "," + StateName);"%20";"+"))</formula>
                 </code>
                 <field type="text" kind="editable" name="City"/>
                 <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="9" containertype="65418" aftercontainercount="1" afterbegincount="3">
@@ -101,26 +139,23 @@ Yg4BAIQAAAAAAAAAAAA=
         </tablerow>
         <tablerow>
           <tablecell>
-            <par def="3">
+            <par def="4">
               <run>
                 <font style="bold" color="#4181c0"/>State:</run>
             </par>
           </tablecell>
           <tablecell>
-            <par def="5">
-              <field type="text" kind="computedfordisplay" name="StateName">
-                <code event="defaultvalue">
-                  <formula>@ProperCase(@DbLookup("":"NoCache";"";"AllStates";State;2;[FailSilent]))</formula>
+            <par def="6">
+              <computedtext>
+                <code event="value">
+                  <formula>StateName</formula>
                 </code>
-              </field>
-              <compositedata type="98" prevtype="65418" nexttype="222" afterparcount="6" containertype="65418" aftercontainercount="1" afterbegincount="3">
-Yg4BAIQAAAAAAAAAAAA=
-</compositedata>
+              </computedtext>
             </par>
           </tablecell>
         </tablerow>
       </table>
-      <par def="1"/>
+      <par def="2"/>
     </richtext>
   </body>
 </form>

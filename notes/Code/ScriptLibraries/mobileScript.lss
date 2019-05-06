@@ -12,8 +12,11 @@ Option Declare
 Declare Sub exitViewSelectField()
 Declare Sub exitCitiesField
 Declare Sub exitStatesField
+Declare Sub emailExport(stateCity As String)
 
 '++LotusScript Development Environment:2:5:(Declarations):0:2
+
+'++LotusScript Development Environment:2:2:Initialize:0:10
 
 '++LotusScript Development Environment:2:2:exitViewSelectField:5:8
 %REM
@@ -107,6 +110,50 @@ Sub exitStatesField
 	Call ws.SetTargetFrame("view")
 	Call ws.ComposeDocument(db.server, db.filePath, "statesView")
 Exit Sub
+	
+showErr:
+	MsgBox "Error " & CStr(Err) & " on line " & CStr(Erl) & ": " & Error(Err)
+	Exit Sub
+End Sub
+
+'++LotusScript Development Environment:2:2:emailExport:5:8
+%REM
+	Sub emailExport
+	Description: Comments for Sub
+%END REM
+Sub emailExport(stateCity As String)
+	Dim session As New NotesSession
+	Dim db As NotesDatabase
+	Dim view As NotesView
+	Dim dc As NotesDocumentCollection
+	Dim doc As NotesDocument
+	Dim ids As String
+	Dim request As NotesHTTPRequest
+
+	On Error GoTo showErr
+
+	Set db = session.Currentdatabase
+	Set view = db.Getview("mbContactsState")
+	Set dc = view.Getalldocumentsbykey(stateCity, True)
+	Set doc = dc.Getfirstdocument()
+	While Not doc Is Nothing
+		ids = ids & |"| & doc.Universalid & |",|
+		Set doc = dc.Getnextdocument(doc)
+	Wend
+	ids = "[" & Left(ids, Len(ids) - 1) & "]"
+	
+	Set request = session.Createhttprequest()
+	Call request.Setheaderfield("secretKey", "YOUR_SECRET_KEY")
+	Call request.Post("YOUR_URL", |{"data":| & ids & |}|)
+	Call request.Setheaderfield("Content-Type", "application/json")
+	Call request.Setheaderfield("sendTo", session.Username)
+	If InStr(request.Responsecode, "200 OK") = 0 Then
+		MsgBox "Sorry, request failed", 16, "Error"
+	Else
+		MsgBox "Please check your email", 64, "Success"
+	End If
+	
+	Exit Sub
 	
 showErr:
 	MsgBox "Error " & CStr(Err) & " on line " & CStr(Erl) & ": " & Error(Err)

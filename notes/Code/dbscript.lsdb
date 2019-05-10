@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databasescript xmlns="http://www.lotus.com/dxl">
+  <code event="options">
+    <lotusscript>%REM
+	Database Script Database Script
+	Created May 9, 2019 by Paul Withers/Intec
+	Description: Comments for Database Script
+%END REM
+Option Declare
+Use "mobileScript"
+
+</lotusscript>
+  </code>
+  <code event="postopen">
+    <lotusscript>Sub Postopen(Source As Notesuidatabase)
+	Call initialiseDatabase()
+End Sub</lotusscript>
+  </code>
+</databasescript>

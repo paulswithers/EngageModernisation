@@ -68,18 +68,34 @@ Yg4BAIQAAAAAAAAAAAA=
           <font size="8pt" name="Verdana" pitch="variable" truetype="true" familyid="20"/>
         </run>
       </par>
-      <pardef id="2"/>
+      <pardef id="2">
+        <code event="hidewhen">
+          <formula>getState:=@DbLookup("":"NoCache";@Environment("xdemo_server");@Environment("xdemo_filepath");"AllStates";@Environment("xdemo_state");1;[FailSilent]);
+getState = ""</formula>
+        </code>
+      </pardef>
       <par def="2">
         <run>
           <font size="8pt" name="Verdana" pitch="variable" truetype="true" familyid="20"/>
         </run>
         <button width="2in" widthtype="maximum" maxlines="1" wraptext="true" edge="rounded" bgcolor="green">
-          <font style="bold" name="Verdana" pitch="variable" truetype="true" familyid="20" color="white"/>Email Me Contacts</button>
+          <font style="bold" name="Verdana" pitch="variable" truetype="true" familyid="20" color="white"/>Email Me Contacts<code event="options">
+            <lotusscript>Use "mobileScript"
+</lotusscript>
+          </code>
+          <code event="click">
+            <lotusscript>Sub Click(Source As Button)
+	Dim ws As New NotesUIWorkspace
+	Call emailExport(ws.CurrentDocument.FieldGetText("stateCity"))
+End Sub</lotusscript>
+          </code>
+        </button>
         <run>
           <font size="8pt" name="Verdana" pitch="variable" truetype="true" familyid="20"/>
         </run>
       </par>
-      <par def="2">
+      <pardef id="3"/>
+      <par def="3">
         <run>
           <font name="Verdana" pitch="variable" truetype="true" familyid="20"/>
         </run>

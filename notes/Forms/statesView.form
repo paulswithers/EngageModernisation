@@ -68,12 +68,7 @@ Yg4BAIQAAAAAAAAAAAA=
           <font size="8pt" name="Verdana" pitch="variable" truetype="true" familyid="20"/>
         </run>
       </par>
-      <pardef id="2">
-        <code event="hidewhen">
-          <formula>getState:=@DbLookup("":"NoCache";@Environment("xdemo_server");@Environment("xdemo_filepath");"AllStates";@Environment("xdemo_state");1;[FailSilent]);
-getState = ""</formula>
-        </code>
-      </pardef>
+      <pardef id="2"/>
       <par def="2">
         <run>
           <font size="8pt" name="Verdana" pitch="variable" truetype="true" familyid="20"/>
